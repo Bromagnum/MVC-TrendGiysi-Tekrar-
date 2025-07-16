@@ -17,7 +17,7 @@ namespace MVC_TrendGiysi_Tekrar_.Models.Contexts
 
             modelBuilder.Entity<Product>()
             .HasOne(p => p.Category)
-            .WithMany(c => c.Products)
+            .WithMany(static c => c.Products)
             .HasForeignKey(p => p.CategoryId);
             base.OnModelCreating(modelBuilder);
 

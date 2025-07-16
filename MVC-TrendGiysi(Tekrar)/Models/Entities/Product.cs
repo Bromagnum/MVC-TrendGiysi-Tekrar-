@@ -13,8 +13,8 @@ namespace MVC_TrendGiysi_Tekrar_.Models.Entities
         public int UnitINStock { get; set; }
 
 
-        public int CategoryId { get; set; } // Foreign Key alanı
-        public Category Category { get; set; } // Navigation property
+        public int CategoryId { get; set; }       
+        public Category Category { get; set; }   
 
     }
 }
