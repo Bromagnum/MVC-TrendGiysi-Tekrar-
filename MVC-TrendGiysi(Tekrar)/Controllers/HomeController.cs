@@ -19,7 +19,7 @@ namespace MVC_TrendGiysi_Tekrar_.Controllers
 
         public async Task<IActionResult> Index()
         {
-            return View(_productService.GetProducts);
+            return View(_productService.GetProducts());
         }
 
         public IActionResult Privacy()

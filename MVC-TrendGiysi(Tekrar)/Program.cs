@@ -1,12 +1,14 @@
 using Microsoft.EntityFrameworkCore;
 using MVC_TrendGiysi_Tekrar_.Models.Contexts;
 using MVC_TrendGiysi_Tekrar_.Models.Entities;
+using MVC_TrendGiysi_Tekrar_.Views.Services;
 
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<IProductService, ProductService>();
 
 //AddConnection
 string connectionString = builder.Configuration.GetConnectionString("AtakanConnection");
