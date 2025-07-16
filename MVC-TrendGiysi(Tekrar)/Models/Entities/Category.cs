@@ -1,4 +1,7 @@
-﻿namespace MVC_TrendGiysi_Tekrar_.Models.Entities
+﻿using Microsoft.EntityFrameworkCore;
+using MVC_TrendGiysi_Tekrar_.Models.Contexts;
+
+namespace MVC_TrendGiysi_Tekrar_.Models.Entities
 {
     public class Category
     {
