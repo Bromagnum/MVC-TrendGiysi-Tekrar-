@@ -1,0 +1,26 @@
+﻿
+@model LoginVM
+@if (TempData["Error"] != null)
+{
+    <div>
+        @TempData["Error"];
+    </div>
+}
+
+<form method="post">
+    <div>
+        <label>Username</label>
+        <span asp-validation-for="Username"></span>
+        <input type="text" asp-for="Username" />
+    </div>
+
+    <div>
+        <label>Şifre</label>
+        <span asp-validation-for="Password"></span>
+        <input type="password" asp-for="Password" />
+    </div>
+
+    <button type="submit">Giriş</button>
+</form>
+
+

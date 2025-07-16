@@ -8,6 +8,7 @@ namespace MVC_TrendGiysi_Tekrar_.Models.Contexts
     {
         public GiysiContext(DbContextOptions<GiysiContext> options) : base(options)
         {
+
         }
 
     }
