@@ -9,7 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 //AddConnection
-string connectionString = builder.Configuration.GetConnectionString("GoktugConnection");
+string connectionString = builder.Configuration.GetConnectionString("AtakanConnection");
 //AddDbcontext
 builder.Services.AddDbContext<GiysiContext>(options => options.UseSqlServer(connectionString));
 
