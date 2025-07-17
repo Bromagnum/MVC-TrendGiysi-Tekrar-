@@ -11,7 +11,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IProductService, ProductService>();
 
 //AddConnection
-string connectionString = builder.Configuration.GetConnectionString("GoktugConnection");
+string connectionString = builder.Configuration.GetConnectionString("FeyzaConnection");
 //AddDbcontext
 builder.Services.AddDbContext<GiysiContext>(options => options.UseSqlServer(connectionString));
 

@@ -12,6 +12,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="~/css/styles.css" rel="stylesheet" />
+
+
 </head>
 <body>
     <!-- Navigation-->
@@ -40,12 +42,11 @@
                         <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
                     </button>
                 </form>
-                <div class="col-md-3 text-end"> 
-                    <button type="button" class="btn btn-outline-primary me-2" asp-controller="Account" asp-action="Login">
-                        Login
-                    </button> 
-                    <button type="button" class="btn btn-primary" asp-controller="Account" asp-action="Register">Register</button>
-                    </div>
+                <divclass ="d-flex align-items-center">
+                    
+                    <a class="btn btn-outline-primary me-2" asp-controller="Account" asp-action="Login">Log in</a>
+                    <a class="btn btn-outline-primary " asp-controller="Account" asp-action="Register">Register</a>
+               </divclass>
             </div>
         </div>
     </nav>
@@ -55,7 +56,7 @@
 
 
     <!-- Footer-->
-    <footer class="py-5 bg-dark">
+    <footer class="py-5 bg-dark fixed-bottom">
         <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
     </footer>
     <!-- Bootstrap core JS-->
