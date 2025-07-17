@@ -1,0 +1,40 @@
+﻿@model RegisterVM
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@if (TempData["Error"] != null)
+{
+    <div>
+        @TempData["Error"];
+    </div>
+}
+<form method="post">
+    <div>
+        <label>Username</label>
+        <span asp-validation-for="Username"></span>
+        <input type="text" asp-for="Username" />
+    </div>
+    <div>
+        <label>Email</label>
+        <span asp-validation-for="Email"></span>
+        <input type="email" asp-for="Email" />
+    </div>
+
+    <div>
+        <label>Şifre</label>
+        <span asp-validation-for="Password"></span>
+        <input type="password" asp-for="Password" />
+    </div>
+
+    <div>
+        <label>Şifre (Tekrar)</label>
+        <span asp-validation-for="ConfirmPassword"></span>
+        <input type="password" asp-for="ConfirmPassword" />
+    </div>
+    <button type="submit">Oluştur</button>
+</form>
+
+
+
+
